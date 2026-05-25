@@ -12,12 +12,12 @@ const projects = [
     demo: 'http://52.55.28.0',
   },
   {
-    title: 'Dockerized Flask Application',
+    title: 'Dockerized n8n agent',
     description:
-      'A production-ready Flask application fully containerized with Docker. Features multi-stage builds, health checks, and automated CI/CD pipeline integration.',
+      'An automatized agent to manage the clients comments.',
     image: '/images/project-docker.jpg',
-    tech: ['Docker', 'Flask', 'GitHub Actions', 'Nginx'],
-    github: '#',
+    tech: ['Docker', 'n8n', 'APIs'],
+    github: '#'
     demo: null,
   },
   {
