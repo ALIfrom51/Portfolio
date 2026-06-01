@@ -13,13 +13,11 @@ const projects = [
   },
   {
     title: 'Dockerized n8n agent',
-    title: 'Dockerized n8n agent',
     description:
-      'An automatized agent to manage the clients comments.',
       'An automatized agent to manage the clients comments.',
     image: '/images/project-docker.jpg',
     tech: ['Docker', 'n8n' , 'APIs' , 'automation'],
-    github: '#',
+    github: 'https://github.com/ALIfrom51/n8nproject_1',
     demo: null,
   },
   {

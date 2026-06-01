@@ -15,49 +15,41 @@ const skills = [
     name: 'Cloud & AWS',
     icon: Cloud,
     color: '#14b8a6',
-    label: 'Advanced',
   },
   {
     name: 'Docker & Containers',
     icon: Container,
     color: '#0ea5e9',
-    label: 'Advanced',
   },
   {
     name: 'Python',
     icon: FlaskConical,
     color: '#22c55e',
-    label: 'Advanced',
   },
   {
     name: 'Node.js',
     icon: Server,
     color: '#22c55e',
-    label: 'Intermediate',
   },
   {
     name: 'React & Frontend',
     icon: Code2,
     color: '#0ea5e9',
-    label: 'Advanced',
   },
   {
     name: 'MySQL & Databases',
     icon: Database,
     color: '#f59e0b',
-    label: 'Intermediate',
   },
   {
     name: 'Git & GitHub',
     icon: GitBranch,
     color: '#a78bfa',
-    label: 'Advanced',
   },
   {
     name: 'Linux & DevOps',
     icon: Terminal,
     color: '#9ca3af',
-    label: 'Advanced',
   },
 ];
 
@@ -144,30 +136,6 @@ export default function Skills() {
               >
                 <Icon size={40} style={{ color: skill.color }} />
                 <p className="text-lg font-medium text-[#f0f0f5] mt-4">{skill.name}</p>
-
-                {/* Progress bar */}
-                <div
-                  className="mt-3 h-1 rounded-full"
-                  style={{ background: 'rgba(255,255,255,0.08)' }}
-                >
-                  <div
-                    className="h-full rounded-full transition-all duration-1000 ease-out"
-                    style={{
-                      width: `${skill.proficiency}%`,
-                      background: 'linear-gradient(90deg, #7c3aed, #14b8a6)',
-                    }}
-                  />
-                </div>
-
-                <p
-                  className="mt-2 text-xs"
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    color: 'rgba(240,240,245,0.4)',
-                  }}
-                >
-                  {skill.label}
-                </p>
               </div>
             );
           })}
