@@ -6,7 +6,7 @@ export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
   const leftRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', company: '', subject: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
@@ -59,8 +59,10 @@ export default function Contact() {
     }
 
     const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
+      name: formData.name,
+      email: formData.email,
+      company: formData.company,
+      subject: formData.subject,
       message: formData.message,
       to_email: 'rebbouhali54@gmail.com',
     };
@@ -68,10 +70,10 @@ export default function Contact() {
     try {
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       setSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', company: '', subject: '', message: '' });
       setTimeout(() => setSubmitted(false), 3000);
     } catch (err) {
-      setSubmitError('Unable to send message. Please try again later.');
+      setSubmitError('Unable to send inquiry. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -213,7 +215,7 @@ export default function Contact() {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
-                  <p className="text-xl font-medium text-[#f0f0f5]">Message Sent!</p>
+                  <p className="text-xl font-medium text-[#f0f0f5]">Inquiry Sent!</p>
                   <p className="text-sm mt-2" style={{ color: 'rgba(240,240,245,0.5)' }}>
                     I'll get back to you soon.
                   </p>
@@ -223,7 +225,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Full Name *"
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -244,7 +246,7 @@ export default function Contact() {
                 />
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Professional Email *"
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -263,8 +265,49 @@ export default function Contact() {
                     e.currentTarget.style.boxShadow = 'none';
                   }}
                 />
+                <input
+                  type="text"
+                  placeholder="Company (Optional)"
+                  value={formData.company}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  className="w-full px-5 py-3.5 rounded-xl text-[15px] transition-all duration-300 outline-none"
+                  style={{
+                    background: 'rgba(255,255,255,0.04)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    color: '#f0f0f5',
+                  }}
+                  onFocus={(e) => {
+                    e.currentTarget.style.borderColor = 'rgba(124,58,237,0.5)';
+                    e.currentTarget.style.boxShadow = '0 0 0 3px rgba(124,58,237,0.1)';
+                  }}
+                  onBlur={(e) => {
+                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                />
+                <input
+                  type="text"
+                  placeholder="Subject *"
+                  required
+                  value={formData.subject}
+                  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                  className="w-full px-5 py-3.5 rounded-xl text-[15px] transition-all duration-300 outline-none"
+                  style={{
+                    background: 'rgba(255,255,255,0.04)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    color: '#f0f0f5',
+                  }}
+                  onFocus={(e) => {
+                    e.currentTarget.style.borderColor = 'rgba(124,58,237,0.5)';
+                    e.currentTarget.style.boxShadow = '0 0 0 3px rgba(124,58,237,0.1)';
+                  }}
+                  onBlur={(e) => {
+                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                />
                 <textarea
-                  placeholder="Your Message"
+                  placeholder="Message *"
                   required
                   rows={5}
                   value={formData.message}
@@ -295,7 +338,7 @@ export default function Contact() {
                     background: 'linear-gradient(135deg, #7c3aed, #14b8a6)',
                   }}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Sending...' : 'Send Inquiry'}
                 </button>
               </form>
             )}
