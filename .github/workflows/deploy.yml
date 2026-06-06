@@ -1,0 +1,50 @@
+name: CI/CD Portfolio
+
+# Déclencheurs : Quand la pipeline doit-elle s'exécuter ?
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Récupérer le code du dépôt
+    - name: Checkout du code
+      uses: actions/checkout@v4
+
+    # 2. Installer Node.js
+    - name: Configuration de Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-with: '20' # Modifiez selon votre version de Node
+        cache: 'npm'
+
+    # 3. Installer les dépendances (plus rapide et propre que npm install)
+    - name: Installer les dépendances
+      run: npm ci
+
+    # 4. Lancer les tests (si vous en avez)
+    - name: Exécuter les tests
+      run: npm test --if-present
+
+    # 5. Build du projet (générer les fichiers statiques)
+    - name: Build de l'application
+      run: npm run build --if-present
+
+  deploy:
+    needs: build-and-test # Attend que les tests réussissent avant de déployer
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' # Déploie uniquement depuis la branche main
+
+    steps:
+    - name: Checkout du code
+      uses: actions/checkout@v4
+
+    # C'EST ICI QUE VOUS AJOUTEZ L'ÉTAPPE DE DÉPLOIEMENT selon votre hébergeur
+    # Exemple générique (Vercel, Netlify, GitHub Pages, Firebase, VPS...)
+    - name: Exemple de déploiement
+      run: echo "Déploiement en cours sur votre hébergeur..."
