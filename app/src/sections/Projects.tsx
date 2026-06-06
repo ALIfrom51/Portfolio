@@ -17,7 +17,7 @@ const projects = [
       'An automatized agent to manage the clients comments.',
     image: '/images/project-docker.jpg',
     tech: ['Docker', 'n8n' , 'APIs' , 'automation'],
-    github: 'https://github.com/ALIfrom51/n8nproject_1',
+    github: 'https://github.com/ALIfrom51/n8n-reviews',
     demo: null,
   },
   {
