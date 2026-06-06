@@ -14,9 +14,9 @@ const projects = [
   {
     title: 'Dockerized n8n agent',
     description:
-      'An automatized agent to manage the clients comments.',
+      'An automatited agent to manage the clients comments, review analysis with AI-powered sentiment classification, real-time dashboard, and persistent storage.',
     image: '/images/project-docker.jpg',
-    tech: ['Docker', 'n8n' , 'APIs' , 'automation'],
+    tech: ['Docker', 'n8n' , 'APIs' , 'automation','Github actions','JWS Authentification'],
     github: 'https://github.com/ALIfrom51/n8n-reviews',
     demo: null,
   },
