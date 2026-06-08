@@ -24,16 +24,16 @@ const projects = [
     title: 'AWS EC2 Deployment Project',
     description:
       'Automated deployment pipeline provisioning AWS EC2 instances with security hardening, load balancing, and monitoring using CloudWatch dashboards.',
-    image: '/images/project-aws.jpg',
+    image: '/images/Coming_Soon.jpg',
     tech: ['AWS EC2', 'Docker', 'CI/CD', 'CloudWatch'],
     github: '#',
     demo: null,
   },
   {
-    title: 'DevSecOps CI/CD Pipeline',
+    title: 'DevSecOps Project',
     description:
       'An end-to-end DevSecOps pipeline integrating security scanning, automated testing, and deployment orchestration for secure software delivery.',
-    image: '/images/project-devsecops.jpg',
+    image: '/images/Coming_Soon.jpg',
     tech: ['GitHub Actions', 'Docker', 'Security Scanning', 'Flask'],
     github: '#',
     demo: null,
