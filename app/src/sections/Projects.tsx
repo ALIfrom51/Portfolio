@@ -32,10 +32,10 @@ const projects = [
   {
     title: 'DevSecOps Project',
     description:
-      'An end-to-end DevSecOps pipeline integrating security scanning, automated testing, and deployment orchestration for secure software delivery.',
-    image: '/images/Coming_Soon.jpg',
-    tech: ['GitHub Actions', 'Docker', 'Security Scanning', 'Flask'],
-    github: '#',
+      'SOAR (Security Orchestration, Automation and Response) pipeline, from detection to decision-making, focusing in a faster time of execution and avoiding the Alerte Fatigue.',
+    image: '/images/DevSecOps_SOAR.png',
+    tech: ['GitHub Actions', 'Docker', 'Security Scanning', 'AWS EC2', 'n8n', 'Kali Linux', 'Wazuh', 'API', 'Ubuntu', 'Bash', 'MITTRE ATT&CK', 'Lambda AWS', 'API Gateway AWS'],
+    github: 'https://github.com/ALIfrom51/soc_automation',
     demo: null,
   },
 ];

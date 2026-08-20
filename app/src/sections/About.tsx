@@ -10,6 +10,7 @@ const techBadges = [
   'MySQL',
   'CI/CD',
   'DevSecOps',
+  'n8n',
 ];
 
 export default function About() {

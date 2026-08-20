@@ -8,6 +8,7 @@ import {
   Database,
   GitBranch,
   Terminal,
+  Workflow,
 } from 'lucide-react';
 
 const skills = [
@@ -25,6 +26,11 @@ const skills = [
     name: 'Python',
     icon: FlaskConical,
     color: '#22c55e',
+  },
+  {
+    name: 'n8n & Automation',
+    icon: Workflow,
+    color: '#ff6d5a',
   },
   {
     name: 'Node.js',
