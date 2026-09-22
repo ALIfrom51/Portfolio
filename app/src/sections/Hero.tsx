@@ -121,21 +121,6 @@ export default function Hero() {
           >
             Infrastructure & Cloud environments
           </span>
-          <span
-            ref={line3Ref}
-            className="block"
-            style={{
-              fontFamily: "'Clash Display', 'Inter', sans-serif",
-              fontSize: 'clamp(48px, 7vw, 100px)',
-              fontWeight: 600,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.0,
-              color: '#f0f0f5',
-              textShadow: '0 0 80px rgba(124,58,237,0.3)',
-            }}
-          >
-            Infrastructure And Automation
-          </span>
         </h1>
 
 
