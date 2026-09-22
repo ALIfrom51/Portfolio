@@ -2,15 +2,16 @@ import { useEffect, useRef } from 'react';
 
 const techBadges = [
   'Docker',
-  'AWS EC2',
   'GitHub Actions',
   'Linux',
-  'Flask',
-  'Node.js',
   'MySQL',
   'CI/CD',
   'DevSecOps',
   'n8n',
+  'Networking',
+  'Cybersecurity',
+  'Cloud Computing',
+  'Python',
 ];
 
 export default function About() {
@@ -80,17 +81,17 @@ export default function About() {
                 color: '#f0f0f5',
               }}
             >
-              Passionate About Cloud, Security &amp; Automation
+              Passionate About Networking, CyberSecurity &amp; Cloud.
             </h2>
 
             <p
               className="text-base leading-[1.8] mb-6"
               style={{ color: 'rgba(240,240,245,0.65)' }}
             >
-              I'm a third-year engineering student specializing in DevSecOps and Cloud Computing.
-              I Train My self to have a solid base in building secure,
-              scalable applications. My journey in tech started with a curiosity for how systems work
-              — now I'm Trying to build them.
+              I'm a Fourth-year engineering student specializing in Network and Telecommunication.
+              I Train My self to have a solid base in Networking, Security, and Cloud Computing. I have a strong interest in building secure and
+              scalable Infrastructure. My journey in tech started with a curiosity for how systems work
+              now I'm Trying to build them.
             </p>
 
             <p
@@ -98,8 +99,8 @@ export default function About() {
               style={{ color: 'rgba(240,240,245,0.65)' }}
             >
               From configuring Linux servers to deploying applications with automated security
-              scans, I bring a security-first mindset to every project. I'm constantly learning and
-              experimenting with new cloud technologies.
+              scans and monitoring Traffic, I bring a security-first mindset to every project. I'm constantly learning and
+              experimenting with new cloud and security technologies. 
             </p>
 
             {/* Education Timeline */}
@@ -118,7 +119,7 @@ export default function About() {
                 style={{ borderColor: 'rgba(124,58,237,0.4)' }}
               >
                 <p className="text-[15px] font-medium text-[#f0f0f5]">
-                  Third Year in Network &amp; telecommunication Engineering (3rd Year)
+                  Fourth Year in Network &amp; telecommunication Engineering 
                 </p>
                 <p className="text-sm mt-1" style={{ color: 'rgba(240,240,245,0.5)' }}>
                   The National School of Applied Sciences, Safi

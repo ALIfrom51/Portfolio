@@ -21,11 +21,11 @@ const projects = [
     demo: null,
   },
   {
-    title: 'AWS EC2 Deployment Project',
+    title: 'Small-Entreprise Network',
     description:
-      'Automated deployment pipeline provisioning AWS EC2 instances with security hardening, load balancing, and monitoring using CloudWatch dashboards.',
-    image: '/images/Coming_Soon.jpg',
-    tech: ['AWS EC2', 'Docker', 'CI/CD', 'CloudWatch'],
+      'A simulated network environment for a small enterprise, demonstrating networking concepts and configurations using Cisco Packet Tracer.',
+    image: "/images/Capture d'écran 2026-09-17 163109.png",
+    tech: ['Cisco Packet Tracer', 'DHCP', 'TCP/IP', 'OSPF', 'VLAN', 'ACL', 'Firewall', 'HSRP', 'DMZ'],
     github: '#',
     demo: null,
   },

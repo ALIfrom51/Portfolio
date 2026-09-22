@@ -119,7 +119,7 @@ export default function Hero() {
               textShadow: '0 0 80px rgba(124,58,237,0.3)',
             }}
           >
-            Cloud-Native
+            Infrastructure & Cloud environments
           </span>
           <span
             ref={line3Ref}
@@ -138,13 +138,6 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p
-          ref={subtitleRef}
-          className="mt-8 mx-auto max-w-[560px] text-lg leading-[1.7]"
-          style={{ color: 'rgba(240,240,245,0.6)' }}
-        >
-          Third-year engineering student passionate about Docker, AWS, CI/CD pipelines, and building scalable full-stack applications with security at the core.
-        </p>
 
         <div ref={ctaRef} className="mt-12 flex flex-wrap justify-center gap-4">
           <button
@@ -182,7 +175,7 @@ export default function Hero() {
             Contact Me
           </button>
           <a
-            href="/Ali_CV.pdf"
+            href="\Latest_CV3.pdf"
             download
             className="px-8 py-3.5 rounded-lg text-sm font-medium tracking-[0.02em] text-[#f0f0f5] transition-all duration-300 hover:brightness-110 inline-flex items-center justify-center"
             style={{

@@ -18,6 +18,11 @@ const skills = [
     color: '#14b8a6',
   },
   {
+    name: 'Networking & Security',
+    icon: Server,
+    color: '#f43f5e',
+  },
+  {
     name: 'Docker & Containers',
     icon: Container,
     color: '#0ea5e9',
@@ -31,16 +36,6 @@ const skills = [
     name: 'n8n & Automation',
     icon: Workflow,
     color: '#ff6d5a',
-  },
-  {
-    name: 'Node.js',
-    icon: Server,
-    color: '#22c55e',
-  },
-  {
-    name: 'React & Frontend',
-    icon: Code2,
-    color: '#0ea5e9',
   },
   {
     name: 'MySQL & Databases',
