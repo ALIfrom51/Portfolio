@@ -4,7 +4,6 @@ import {
   Container,
   FlaskConical,
   Server,
-  Code2,
   Database,
   GitBranch,
   Terminal,

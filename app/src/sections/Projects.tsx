@@ -26,7 +26,7 @@ const projects = [
       'A simulated network environment for a small enterprise, demonstrating networking concepts and configurations using Cisco Packet Tracer.',
     image: "/images/Capture d'écran 2026-09-17 163109.png",
     tech: ['Cisco Packet Tracer', 'DHCP', 'TCP/IP', 'OSPF', 'VLAN', 'ACL', 'Firewall', 'HSRP', 'DMZ'],
-    github: '#',
+    github: 'https://github.com/ALIfrom51/Small_Entreprise_Network',
     demo: null,
   },
   {
